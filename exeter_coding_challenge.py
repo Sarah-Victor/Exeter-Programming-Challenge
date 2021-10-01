@@ -73,7 +73,7 @@ if __name__ == '__main__':
     generate_frequency_csv()
     process_complete_time = time.time()
     memory_used = psutil.Process(os.getpid()).memory_info().rss / 1024 ** 2 
-    #RSS (resident set size), getpid - process value now returns integer
+    #RSS (resident set size), getpid - process value now returns integer 
     #value which gets convered to rss, returns in KB
     process_time = process_complete_time - process_start_time
     generate_performance(process_time, memory_used)
